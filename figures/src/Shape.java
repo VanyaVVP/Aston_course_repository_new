@@ -4,4 +4,5 @@ interface Shape {
   double calculateArea();
   String getFillColor();
   String getBorderColor();
+  void print();
 }

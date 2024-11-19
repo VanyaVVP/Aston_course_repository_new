@@ -14,24 +14,27 @@ class Triangle implements Shape {
 		    this.borderColor = borderColor;
 		  }
 
-		  @Override
 		  public double calculatePerimeter() {
 		    return side1 + side2 + side3;
 		  }
 
-		  @Override
 		  public double calculateArea() {
 		    double s = (side1 + side2 + side3) / 2;
 		    return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
 		  }
 
-		  @Override
 		  public String getFillColor() {
 		    return fillColor;
 		  }
 
-		  @Override
 		  public String getBorderColor() {
 		    return borderColor;
+		  }
+		  
+		  public void print() {
+			  System.out.println("Периметр: " + calculatePerimeter());
+				System.out.println("Площадь: " + calculateArea());
+				System.out.println("Цвет заливки: " + getFillColor());
+				System.out.println("Цвет границы: " + getBorderColor());  
 		  }
 		}

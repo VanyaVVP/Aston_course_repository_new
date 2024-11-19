@@ -12,23 +12,25 @@ class Rectangle implements Shape {
 		    this.borderColor = borderColor;
 		  }
 
-		  @Override
 		  public double calculatePerimeter() {
 		    return 2 * (width + height);
 		  }
 
-		  @Override
 		  public double calculateArea() {
 		    return width * height;
 		  }
 
-		  @Override
 		  public String getFillColor() {
 		    return fillColor;
 		  }
 
-		  @Override
 		  public String getBorderColor() {
 		    return borderColor;
+		  }
+		  public void print() {
+			  System.out.println("Периметр: " + calculatePerimeter());
+				System.out.println("Площадь: " + calculateArea());
+				System.out.println("Цвет заливки: " + getFillColor());
+				System.out.println("Цвет границы: " + getBorderColor());  
 		  }
 		}

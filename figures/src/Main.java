@@ -8,8 +8,6 @@ public class Main {
 	 System.out.print("Введите тип фигуры (круг, прямоугольник, треугольник): ");
 	 String shapeType = scanner.nextLine();
 
-	 Shape shape = null;
-	 
      switch (shapeType) {
     
      case("круг"):
@@ -20,7 +18,8 @@ public class Main {
 	 fillColor = scanner.nextLine();
 	 System.out.print("Введите цвет границы: ");
 	 borderColor = scanner.nextLine();
-	 shape = new Circle(radius, fillColor, borderColor);
+	 Shape shape = new Circle(radius, fillColor, borderColor);
+	 shape.print();
 	 break;
 	
      case("прямоугольник"):
@@ -35,6 +34,7 @@ public class Main {
 	 System.out.print("Введите цвет границы: ");
 	 borderColor = scanner.nextLine();
 	 shape = new Rectangle(width, height, fillColor, borderColor);
+	 shape.print();
 	 break;
 	
      case("треугольник"):
@@ -52,18 +52,12 @@ public class Main {
 	 System.out.print("Введите цвет границы: ");
 	 borderColor = scanner.nextLine();
 	 shape = new Triangle(side1, side2, side3, fillColor, borderColor);
+	 shape.print();
+	 break;
+     default:
+    	 System.out.print( "Данные введены неверно!" );
      }
      
-	 if (shape != null) {
-		System.out.println("Периметр: " + shape.calculatePerimeter());
-		System.out.println("Площадь: " + shape.calculateArea());
-		System.out.println("Цвет заливки: " + shape.getFillColor());
-		System.out.println("Цвет границы: " + shape.getBorderColor());
-		} 
-	 else {
-			System.out.println("Неверный тип фигуры.");
-	}
-
 	scanner.close();
 		}
 	  }
