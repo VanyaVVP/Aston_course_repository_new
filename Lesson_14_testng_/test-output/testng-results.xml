@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-28T23:24:27Z" name="Default suite" finished-at="2024-11-28T23:24:27Z" duration-ms="60">
+    <groups>
+    </groups>
+    <test started-at="2024-11-28T23:24:27Z" name="Default test" finished-at="2024-11-28T23:24:27Z" duration-ms="60">
+      <class name="Aston_Unit.Lesson_14_testng.FactorialTest">
+        <test-method signature="testFactorialNegativeNumber()[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialNegativeNumber" description="Третий тест - негативный (-1)" finished-at="2024-11-29T02:24:27Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialNegativeNumber -->
+        <test-method signature="testFactorialOverflow()[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialOverflow" description="Четвертый тест - негативный (переполнение long)" finished-at="2024-11-29T02:24:27Z" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.Throwable org.testng.Assert.expectThrows(java.lang.Class, org.testng.Assert$ThrowingRunnable)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.Throwable org.testng.Assert.expectThrows(java.lang.Class, org.testng.Assert$ThrowingRunnable)'
+	at Aston_Unit.Lesson_14_testng.FactorialTest.testFactorialOverflow(FactorialTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialOverflow -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositive(int, long)[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositive" description="Пятый тест - Позитивные тесты для факториала через параметр" data-provider="factorialData" finished-at="2024-11-29T02:24:27Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[720]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositive -->
+        <test-method signature="testFactorialPositiveSmallNumbers()[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositiveSmallNumbers" description="Первый тест - позитивный" finished-at="2024-11-29T02:24:27Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositiveSmallNumbers -->
+        <test-method signature="testFactorialPositiveSmallNumbers()[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositiveSmallNumbers" description="Первый тест - позитивный" finished-at="2024-11-29T02:24:27Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositiveSmallNumbers -->
+        <test-method signature="testFactorialPositiveSmallNumbers()[pri:0, instance:Aston_Unit.Lesson_14_testng.FactorialTest@11e21d0e]" started-at="2024-11-29T02:24:27Z" name="testFactorialPositiveSmallNumbers" description="Первый тест - позитивный" finished-at="2024-11-29T02:24:27Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactorialPositiveSmallNumbers -->
+      </class> <!-- Aston_Unit.Lesson_14_testng.FactorialTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
